@@ -7,7 +7,7 @@ Template.profile.events({
 				if (err)
 					throw new Meteor.Error(err);
 				else {
-					var imageLoc = '/cfs/files/ProfileImages/' + result._id;
+					var imageLoc = 'cfs/files/ProfileImages/' + result._id;
 					UserImages.insert({
 						userId: Meteor.userId(),
 						username: Meteor.user().username,

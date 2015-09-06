@@ -8,3 +8,12 @@ Meteor.startup(function () {
       passwordSignupFields: 'USERNAME_AND_EMAIL'
     });
 });
+
+Template.registerHelper('getProfileImg', function(userId) {
+    var imgUrl = UserImages.findOne({userId: userId}).image;
+    console.log(imgUrl);
+    if (imgUrl)
+      return imgUrl;
+    else
+      return "img/noimage.jpeg";
+});
