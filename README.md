@@ -6,7 +6,10 @@ A twitter-like app that allowing users to create microposts with pictures, utili
 * 
 
 ## Notes
-* 
+* install iron router:
+```
+meteor add iron:router
+```
   
 ## Deployment
 
