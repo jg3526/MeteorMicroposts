@@ -3,7 +3,7 @@ A twitter-like app that allowing users to create microposts with pictures, utili
 
 ## Features
 
-* 
+* Routing - Iron Router
 
 ## Notes
 * install iron router:
