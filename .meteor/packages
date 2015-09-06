@@ -12,3 +12,5 @@ twbs:bootstrap
 accounts-ui
 accounts-password
 joshowens:accounts-entry
+cfs:standard-packages
+cfs:gridfs
