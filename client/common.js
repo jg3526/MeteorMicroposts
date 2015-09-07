@@ -10,10 +10,10 @@ Meteor.startup(function () {
 });
 
 Template.registerHelper('getProfileImg', function(userId) {
-    var imgUrl = UserImages.findOne({userId: userId}).image;
-    console.log(imgUrl);
-    if (imgUrl)
-      return imgUrl;
-    else
+    var img = UserImages.findOne({userId: userId});
+    if (img) {
+      return img.image;
+    } else{
       return "img/noimage.jpeg";
+    }      
 });
