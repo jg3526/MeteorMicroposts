@@ -27,12 +27,12 @@
 	<hr>
 	{{#each posts}}
 		<div class="row post">
-			<div class="col-md-1">
+			<div class="col-md-2">
 				<img src="{{getProfileImg userId}}">
 			</div>
-			<div class="col-md-11">
+			<div class="col-md-10">
+				<p><strong>{{body}}</strong></p>
 				<small>Posted By {{username}} at {{createdAt}}</small>
-				<p>{{body}}</p>
 			</div>
 		</div>
 	{{else}}
