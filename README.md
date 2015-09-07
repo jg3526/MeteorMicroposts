@@ -15,3 +15,33 @@ A twitter-like app that allowing users to create microposts with pictures, utili
 ```
 meteor reset
 ```
+
+## Structure
+```
+MeteorMicroposts/
+├── server/
+│   └── common.js
+├── client/
+│   ├── common.js
+│   ├── templates/
+│   │   ├── head.html
+│   │   ├── navbar.html
+│   │   ├── layout.html
+│   │   ├── posts/
+│   │   │   ├── posts.html
+│   │   │   └── posts.js
+│   │   ├── profile/
+│   │   │   ├── profile.html
+│   │   │   └── profile.js
+│   │   └── about/
+│   │       ├── about.html
+│   │       └── about.js
+│   └── stylesheets/
+│       └── MeteorMicroposts.css
+├── lib/
+│   ├── collection.js
+│   └── router.js
+└── public/
+    ├── fonts/
+    └── img/
+```
